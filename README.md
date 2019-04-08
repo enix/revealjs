@@ -1,1 +1,1 @@
-revealjs
+A simple container which accelerates the revealjs installation

@@ -3,6 +3,7 @@ services:
   www:
     build:
       context: .
+      target: develop
     ports:
     - 8000:8000
     - 35729:35729

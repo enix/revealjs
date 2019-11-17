@@ -14,7 +14,7 @@ build:
   image: docker:stable-dind
   script:
     - echo "Logging to GitLab Container Registry with CI credentials..."
-    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+    - echo "$CI_REGISTRY_PASSWORD" | docker login "$CI_REGISTRY" --username "$CI_REGISTRY_USER" --password-stdin
     - docker build --tag $IMAGE_TAG .
     - docker push $IMAGE_TAG
 

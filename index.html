@@ -1,131 +1,200 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>enix.io - L'orchestration de conteneurs avec Kubernetes</title>
-		<link rel="icon" href="/enix/favicon.ico">
-		<link rel="icon" type="image/png" sizes="32x32" href="/enix/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/enix/favicon-16x16.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/enix/apple-touch-icon.png">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<link rel="stylesheet" href="enix/enix.css">
-		<link rel="stylesheet" href="custom.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-					<textarea data-template>
-						![kubernetes](enix/kubernetes.svg) <!-- .element: class="logo kubernetes" -->
+    <head>
+        <meta charset="UTF-8">
+        <title>enix.io - L'orchestration de conteneurs avec Kubernetes</title>
+        <link rel="icon" href="/enix/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="/enix/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/enix/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/enix/apple-touch-icon.png">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="enix/enix.css">
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                    <textarea data-template>
+                        ![kubernetes](enix/kubernetes.svg) <!-- .element: class="logo kubernetes" -->
 
-						L'orchestration de conteneurs avec Kubernetes
+                        Dompter ses problématiques **RGPD**<br>à grands coups de **ZFS**
 
-						<small>Alexandre Buisine [@alexbuisine](https://twitter.com/alexbuisine)</small>
+                        <small>Alexandre Buisine [@alexbuisine](https://twitter.com/alexbuisine)</small>
+                        <small>Sébastien Wacquiez [@swacquie](https://twitter.com/swacquie)</small>
 
-						![enix](enix/enix.svg) <!-- .element: class="logo enix" -->
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 1
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 2
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 3
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 4
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 5
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 6
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 7
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 8
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 9
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 10
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 11
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 12
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 13
-					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						# Page 14
-					</textarea>
-				</section>
-			</div>
-			<img id="enix-progress-animation" class="enix-progress-animation" src="enix/enix-anim-0.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-1.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-2.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-3.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-4.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-5.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-6.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-7.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-8.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-9.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-10.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-11.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-12.svg">
-			<img class="enix-progress-animation" src="enix/enix-anim-13.svg">
-		</div>
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-		<script>
-			Reveal.initialize({
-				history: true,
-				progress: false,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-					]
-			});
-		</script>
-		<script src="enix/enix-anim.js"></script>
-	</body>
+                        ![enix](enix/enix.svg) <!-- .element: class="logo enix" -->
+                        <small>root@**Sysadmin_Days**:/**9**#</small>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # This talk
+
+                        <span class="fragment">is about our **GDPR** concerns</span>
+
+                        <span class="fragment">as a subcontractor we operate **backups**</span>
+                        
+                        <span class="fragment">we do not manage directly **final user**'s information,</span>
+                        <span class="fragment">but they are part of the data we manipulate</span>
+
+                        <span class="fragment">we therefore must **isolate** backups per customer</span>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # ZFS
+
+                        <span class="fragment">provides quite a list of features :</span>
+
+                        <span class="fragment">volume management</span>
+                        <span class="fragment">copy-on-write</span>
+                        <span class="fragment">**snapshots**</span>
+                        <span class="fragment">RAID-Z</span>
+                        <span class="fragment">acceleration</span>
+                        <span class="fragment">**data integrity verification**</span>
+                        <span class="fragment">automatic repair</span>
+                        <span class="fragment">**encryption**</span>
+                        <span class="fragment">dedup</span>
+                        <span class="fragment">**multi-host**</span>
+                    </textarea>
+                </section>
+
+                <section data-markdown>
+                    <textarea data-template>
+                        # ZFS 0.8
+
+                        <span class="fragment">since **0.8.0** in may 2019 :</span>
+                        
+                        <span class="fragment">device removal,</span>
+                        <span class="fragment">pool checkpoints,</span>
+                        <span class="fragment">pool TRIM,</span>
+                        <span class="fragment">pool initialization,</span>
+                        <span class="fragment">project accounting and quota,</span>
+                        <span class="fragment">channel programs,</span>
+                        <span class="fragment">Pyzfs,</span>
+                        <span class="fragment">Direct IO,</span>
+
+                        <span class="fragment">**native encryption**</span>
+
+                        <span class="fragment">**raw encrypted <code style="font-size: 35px">zfs send/receive</code>**</span>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # Basic topology
+
+                        <span class="fragment">how we first moved to ZFS</span>
+                    </textarea>
+                </section>
+                <section data-background-image="resources/basic-topology-1.png" data-background-size="contain">
+                </section>
+                <section data-background-image="resources/basic-topology-2.png" data-background-size="contain">
+                </section>
+                <section data-background-image="resources/basic-topology-3.png" data-background-size="contain">
+                </section>
+                <section data-background-image="resources/basic-topology-4.png" data-background-size="contain">
+                </section>
+                <section data-background-image="resources/basic-topology-5.png" data-background-size="contain">
+                </section>
+                <section data-background-image="resources/basic-topology-6.png" data-background-size="contain">
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # Basic's pros & cons
+
+                        <span class="fragment green">keys per VM</span>
+
+                        <span class="fragment green">isolated encryption at rest</span>
+
+                        <span class="fragment red">isolation not 100% secure at runtime</span>
+
+                        <span class="fragment red">external key management required</span>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # Zero-trust topology
+                    </textarea>
+                </section>
+                <section data-background-image="resources/zero-1.png" data-background-size="contain"></section>
+                <section data-background-image="resources/zero-2.png" data-background-size="contain"></section>
+                <section data-background-image="resources/zero-3.png" data-background-size="contain"></section>
+                <section data-background-image="resources/zero-4.png" data-background-size="contain"></section>
+                <section data-background-image="resources/zero-5.png" data-background-size="contain"></section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # Zero trust pros & cons
+
+                        <span class="fragment green">encrypted at rest</span>
+                        <span class="fragment green">& runtime</span>
+
+                        <span class="fragment green">keys under customer's responsibility</span>
+
+                        <span class="fragment green">flexible backup and replication architecture</span>
+
+                        <span class="fragment red">requires ZFS on origin host</span>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # Prod ready ?
+
+                        <span class="fragment">we feel so, with various case of **data recovery**</span>
+
+                        <span class="fragment">**basic topology** is in production</span>
+                        <span class="fragment">with a potential key migration to HashiCorp **Vault**</span>
+
+                        <span class="fragment">the **zero trust** approach is planned for early 2020</span>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # and then ...
+                        
+                        <span class="fragment">[Linux Kernel 5.2 introduced poor ZFS performance](https://www.phoronix.com/scan.php?page=news_item&px=ZFS-On-Linux-Restoring-SIMD)</span>
+
+                        <span class="fragment">[OpenZFS dev-summit](http://open-zfs.org/wiki/OpenZFS_Developer_Summit)</span>
+                        
+                        <span class="fragment">ZFS avec kubernetes</span>
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        # high five slide
+                    </textarea>
+                </section>
+            </div>
+            <img id="enix-progress-animation" class="enix-progress-animation" src="enix/enix-anim-0.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-1.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-2.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-3.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-4.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-5.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-6.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-7.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-8.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-9.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-10.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-11.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-12.svg">
+            <img class="enix-progress-animation" src="enix/enix-anim-13.svg">
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                history: true,
+                progress: false,
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                    ]
+            });
+        </script>
+        <script src="enix/enix-anim.js"></script>
+    </body>
 </html>
